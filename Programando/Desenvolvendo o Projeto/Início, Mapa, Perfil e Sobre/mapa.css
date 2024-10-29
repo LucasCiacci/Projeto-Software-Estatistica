@@ -9,7 +9,7 @@
 body {
     display: flex;
     height: 100vh;
-    background-image: url('FundoSite.png'); /* Espaço reservado para a imagem de fundo */
+    background-image: url('Imagens/FundoSite.png'); /* Espaço reservado para a imagem de fundo */
     background-size: cover;
     background-position: center;
 }
@@ -107,7 +107,7 @@ body {
 #btn1 {
     top: 80%;
     left: 15%;
-    background-image: url('m1.png');
+    background-image: url('Imagens/m1.png');
     background-size: cover;
     background-position: center;
 }
@@ -115,7 +115,7 @@ body {
 #btn2 {
     top: 57%;
     left: 36.5%;
-    background-image: url('m2.png');
+    background-image: url('Imagens/m2.png');
     background-size: cover;
     background-position: center;
 }
@@ -123,7 +123,7 @@ body {
 #btn3 {
     top: 20%;
     left: 55%;
-    background-image: url('m3.png');
+    background-image: url('Imagens/m3.png');
     background-size: cover;
     background-position: center;
 }
@@ -131,7 +131,7 @@ body {
 #btn4 {
     top: -5%;
     left: 75%;
-    background-image: url('m4.png');
+    background-image: url('Imagens/m4.png');
     background-size: cover;
     background-position: center;
 }

@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('FundoCadastro.png'); /* Adicione aqui o caminho para a imagem de fundo */
+    background-image: url('Imagens/FundoCadastro.png'); /* Adicione aqui o caminho para a imagem de fundo */
     background-size: cover;
     background-position: center;
 }

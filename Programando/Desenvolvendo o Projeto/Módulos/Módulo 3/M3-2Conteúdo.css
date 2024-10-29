@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('FundoSite.png'); /* Substitua pelo caminho da imagem de fundo */
+    background-image: url('Imagens/FundoSite.png'); /* Substitua pelo caminho da imagem de fundo */
     background-size: cover;
     display: flex;
 }

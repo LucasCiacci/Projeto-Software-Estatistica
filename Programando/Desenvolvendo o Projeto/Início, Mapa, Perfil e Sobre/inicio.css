@@ -9,7 +9,7 @@
 body {
     display: flex;
     height: 100vh;
-    background-image: url('FundoSite.png'); /* Espaço reservado para a imagem de fundo */
+    background-image: url('Imagens/FundoSite.png'); /* Espaço reservado para a imagem de fundo */
     background-size: cover;
     background-position: center;
 }

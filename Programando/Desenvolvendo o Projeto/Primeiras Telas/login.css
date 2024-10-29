@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('FundoCadastro.png'); /* Coloque aqui a imagem de fundo */
+    background-image: url('Imagens/FundoCadastro.png'); /* Coloque aqui a imagem de fundo */
     background-size: cover;
     background-position: center;
 }
