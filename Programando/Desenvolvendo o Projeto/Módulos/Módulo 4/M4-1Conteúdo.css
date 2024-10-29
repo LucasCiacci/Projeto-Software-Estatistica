@@ -43,7 +43,7 @@ body {
 }
 
 .faixa-lateral {
-    height: 725px;
+    height: 740px;
     width: 220px;
     background-color: white;
     display: flex;
@@ -163,4 +163,27 @@ ul li::before {
     left: 0;
     color: white; /* Cor da bolinha */
     font-size: 18px; /* Tamanho da bolinha */
+}
+
+/* Estilo da fórmula */
+.formula {
+    font-size: 18px; /* Tamanho do texto, ajuste conforme necessário */
+}
+
+/* Estilo para a fração */
+.fraction {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.numerator {
+    display: block;
+}
+
+.denominator {
+    display: block;
+    border-top: 2px solid white; /* Linha entre numerador e denominador */
+    margin-top: 3px; /* Ajuste de espaçamento */
+    padding-top: 3px; /* Ajuste de espaçamento */
 }
