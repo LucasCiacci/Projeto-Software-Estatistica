@@ -19,15 +19,15 @@
     <h2 class="title">ENTRAR</h2>
 
     <div class="container">
-        <!-- Formulário de Cadastro -->
+        <!-- Formulário de Login -->
         <div class="form-container">
-            <form>
+            <form action="login.php" method="POST">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
 
                 <label for="senha">Senha:</label>
                 <div class="password-container">
-                    <input type="password" id="senha" name="senha">
+                    <input type="password" id="senha" name="senha" required>
                 </div>
 
                 <button type="submit" class="submit-button">ENTRAR</button>
