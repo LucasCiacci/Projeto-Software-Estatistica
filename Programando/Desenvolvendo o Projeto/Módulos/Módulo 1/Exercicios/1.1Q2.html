@@ -41,11 +41,8 @@
 
         <!-- Área principal de conteúdo -->
         <div class="conteudo-principal">
-<!-- Botões de navegação entre exercícios -->
-<div class="botoes-navegacao">
-    <a href="1.1Q1.html" class="botao-voltar">Voltar</a>
-    <a href="1.1Q3.html" class="botao-proximo">Próximo</a>
-</div>
+            <form id="questionario" action="../../Gabarito/verificar.php" method="post">
+                <input type="hidden" name="respostas" id="respostas">
 
             <h2>Questão 2:</h2>
             <h3>As alturas dos alunos de uma turma foram registradas em centímetros e organizados no histograma abaixo.</h3>
@@ -57,12 +54,19 @@
     
             <!-- Alternativas -->
             <div class="alternativas">
-                <label><input type="radio" name="alternativa" value="A"> A) A maior quantidade de alunos da turma possui entre 140cm e 155 cm.</label>
-                <label><input type="radio" name="alternativa" value="B"> B) Há mais alunos até 155 cm do que entre 156 cm e 175 cm.</label>
-                <label><input type="radio" name="alternativa" value="C"> C) Há mais alunos entre 156 cm e 175 cm do que entre 140cm e 155 cm.</label>
-                <label><input type="radio" name="alternativa" value="D"> D) A mediana das alturas está na classe 156 cm - 160 cm.</label>
-                <label><input type="radio" name="alternativa" value="D"> E) A moda das alturas está na classe 156 cm - 160 cm.</label>
+                <label><input type="radio" name="1.1Q2" value="A"> A) A maior quantidade de alunos da turma possui entre 140cm e 155 cm.</label>
+                <label><input type="radio" name="1.1Q2" value="B"> B) Há mais alunos até 155 cm do que entre 156 cm e 175 cm.</label>
+                <label><input type="radio" name="1.1Q2" value="C"> C) Há mais alunos entre 156 cm e 175 cm do que entre 140cm e 155 cm.</label>
+                <label><input type="radio" name="1.1Q2" value="D"> D) A mediana das alturas está na classe 156 cm - 160 cm.</label>
+                <label><input type="radio" name="1.1Q2" value="E"> E) A moda das alturas está na classe 156 cm - 160 cm.</label>
             </div>
+            
+            <div class="botoes-navegacao">
+                <button type="button" onclick="salvarResposta('1.1Q2', '1.1Q1.html', false, 'Grupo1.1')">Voltar</button>
+                <button type="button" onclick="salvarResposta('1.1Q2', '1.1Q3.html', false, 'Grupo1.1')">Próximo</button>
+            </div>
+        </form>
+        <script src="../../Gabarito/salvarResposta.js"></script>
         </div>
     </body>
     </html>

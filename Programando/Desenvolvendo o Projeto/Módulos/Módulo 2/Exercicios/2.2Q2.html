@@ -41,11 +41,8 @@
 
         <!-- Área principal de conteúdo -->
         <div class="conteudo-principal">
-<!-- Botões de navegação entre exercícios -->
-<div class="botoes-navegacao">
-    <a href="2.2Q1.html" class="botao-voltar">Voltar</a>
-    <a href="2.2Q3.html" class="botao-proximo">Próximo</a>
-</div>
+            <form id="questionario" action="../../Gabarito/verificar.php" method="post">
+                <input type="hidden" name="respostas" id="respostas">
 
             <h2>Questão 2:</h2>
             <h3>(Enem 2015) Em uma seletiva para a final dos 100 metros livres de natação, numa olimpíada, os atletas, em suas respectivas raias, obtiveram os seguintes tempos:</h3>
@@ -55,14 +52,20 @@
             
             <p><h3>A mediana dos tempos apresentados no quadro é</h3></p>
     
-            <!-- Alternativas -->
-            <div class="alternativas">
-                <label><input type="radio" name="alternativa" value="A"> A) 20,70</label>
-                <label><input type="radio" name="alternativa" value="B"> B) 20,77</label>
-                <label><input type="radio" name="alternativa" value="C"> C) 20,80</label>
-                <label><input type="radio" name="alternativa" value="D"> D) 20,85</label>
-                <label><input type="radio" name="alternativa" value="D"> E) 20,90</label>
-            </div>
+                <!-- Alternativas -->
+                <div class="alternativas">
+                    <label><input type="radio" name="2.2Q2" value="A"> A) 20,70</label>
+                    <label><input type="radio" name="2.2Q2" value="B"> B) 20,77</label>
+                    <label><input type="radio" name="2.2Q2" value="C"> C) 20,80</label>
+                    <label><input type="radio" name="2.2Q2" value="D"> D) 20,85</label>
+                    <label><input type="radio" name="2.2Q2" value="E"> E) 20,90</label>
+                </div>
+                <div class="botoes-navegacao">
+                    <button type="button" onclick="salvarResposta('2.2Q2', '2.2Q1.html', false, 'Grupo2.2')">Voltar</button>
+                    <button type="button" onclick="salvarResposta('2.2Q2', '2.2Q3.html', false, 'Grupo2.2')">Próximo</button>
+                </div>
+            </form>
+            <script src="../../Gabarito/salvarResposta.js"></script>
         </div>
     </body>
     </html>

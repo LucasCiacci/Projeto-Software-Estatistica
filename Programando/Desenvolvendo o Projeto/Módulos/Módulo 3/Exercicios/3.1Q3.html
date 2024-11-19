@@ -41,25 +41,29 @@
 
         <!-- Área principal de conteúdo -->
         <div class="conteudo-principal">
-<!-- Botões de navegação entre exercícios -->
-<div class="botoes-navegacao">
-    <a href="3.1Q2.html" class="botao-voltar">Voltar</a>
-    
-</div>
+            <form id="questionario" action="../../Gabarito/verificar.php" method="post">
+                <input type="hidden" name="respostas" id="respostas">
 
             <h2>Questão 3:</h2>
             <h3>Um professor fez uma pesquisa de idades em uma turma do ensino médio, composta por 15 alunos, e obteve os seguintes resultados: 15, 15, 15, 15, 16, 16, 16, 14, 16, 16, 16, 17, 17, 18, 18.</h3>
 
             <h3>Qual é a amplitude das idades dos alunos dessa sala de aula?</h3>
     
-            <!-- Alternativas -->
-            <div class="alternativas">
-                <label><input type="radio" name="alternativa" value="A"> A) 1</label>
-                <label><input type="radio" name="alternativa" value="B"> B) 2</label>
-                <label><input type="radio" name="alternativa" value="C"> C) 3</label>
-                <label><input type="radio" name="alternativa" value="D"> D) 4</label>
-                <label><input type="radio" name="alternativa" value="D"> E) 5</label>
-            </div>
+                <!-- Alternativas -->
+                <div class="alternativas">
+                    <label><input type="radio" name="3.1Q3" value="A"> A) 1</label>
+                    <label><input type="radio" name="3.1Q3" value="B"> B) 2</label>
+                    <label><input type="radio" name="3.1Q3" value="C"> C) 3</label>
+                    <label><input type="radio" name="3.1Q3" value="D"> D) 4</label>
+                    <label><input type="radio" name="3.1Q3" value="E"> E) 5</label>
+                </div>
+                <div class="botoes-navegacao">
+                    <button type="button" onclick="salvarResposta('3.1Q3', '3.1Q2.html', false, 'Grupo3.1')">Voltar</button>
+                    <button type="button" onclick="salvarResposta('3.1Q3', null, true, 'Grupo3.1')">Verificar Respostas</button>
+        
+                </div>
+            </form>
+            <script src="../../Gabarito/salvarResposta.js"></script>
         </div>
     </body>
     </html>

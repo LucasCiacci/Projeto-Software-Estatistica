@@ -157,3 +157,26 @@ body {
 .botao-voltar:hover, .botao-proximo:hover {
     background-color: #45a049; /* Cor ao passar o mouse */
 }
+
+/* Estilo para o botão Terminar */
+.botao-terminar-container {
+    display: flex;
+    justify-content: flex-end; /* Alinha o botão à direita */
+    margin-top: -50px; /* Espaço acima do botão */
+}
+
+.botao-terminar {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #d28d5d; /* Cor laranja */
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o botão */
+    transition: background-color 0.3s ease;
+}
+
+.botao-terminar:hover {
+    background-color: #ee6617; /* Cor ao passar o mouse */
+}

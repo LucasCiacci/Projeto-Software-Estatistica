@@ -41,11 +41,9 @@
 
         <!-- Área principal de conteúdo -->
         <div class="conteudo-principal">
-<!-- Botões de navegação entre exercícios -->
-<div class="botoes-navegacao">
-    
-    <a href="2.1Q2.html" class="botao-proximo">Próximo</a>
-</div>
+            <form id="questionario" action="../../Gabarito/verificar.php" method="post">
+                <!-- Campo oculto para armazenar respostas -->
+                <input type="hidden" name="respostas" id="respostas">
 
             <h2>Questão 1:</h2>
             <h3>Fernando está avaliando o preço médio de sua tarifa de energia elétrica nos cinco primeiros meses do ano. A planilha mostra os valores por mês, de janeiro a maio.</h3>
@@ -55,14 +53,19 @@
             
             <p><h3>Sua meta é fechar o semestre com um preço médio de R$ 130,00. Para alcançar a meta, o maior preço possível a pagar na tarifa do mêsde junho, será de</h3></p>
     
-            <!-- Alternativas -->
-            <div class="alternativas">
-                <label><input type="radio" name="alternativa" value="A"> A) R$ 109,05</label>
-                <label><input type="radio" name="alternativa" value="B"> B) R$ 125,65</label>
-                <label><input type="radio" name="alternativa" value="C"> C) R$ 130,87</label>
-                <label><input type="radio" name="alternativa" value="D"> D) R$ 98,55</label>
-                <label><input type="radio" name="alternativa" value="D"> E) R$ 97,42</label>
-            </div>
+                <!-- Alternativas -->
+                <div class="alternativas">
+                    <label><input type="radio" name="2.1Q1" value="A"> A) R$ 109,05</label>
+                    <label><input type="radio" name="2.1Q1" value="B"> B) R$ 125,65</label>
+                    <label><input type="radio" name="2.1Q1" value="C"> C) R$ 130,87</label>
+                    <label><input type="radio" name="2.1Q1" value="D"> D) R$ 98,55</label>
+                    <label><input type="radio" name="2.1Q1" value="E"> E) R$ 97,42</label>
+                </div>
+                <div class="botoes-navegacao">
+                    <button type="button" onclick="salvarResposta('2.1Q1', '2.1Q2.html', false, 'Grupo2.1')">Próximo</button>
+                </div>
+            </form>
+            <script src="../../Gabarito/salvarResposta.js"></script>
         </div>
     </body>
     </html>

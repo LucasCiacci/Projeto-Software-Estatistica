@@ -41,11 +41,8 @@
 
         <!-- Área principal de conteúdo -->
         <div class="conteudo-principal">
-<!-- Botões de navegação entre exercícios -->
-<div class="botoes-navegacao">
-    <a href="2.1Q1.html" class="botao-voltar">Voltar</a>
-    <a href="2.1Q3.html" class="botao-proximo">Próximo</a>
-</div>
+            <form id="questionario" action="../../Gabarito/verificar.php" method="post">
+                <input type="hidden" name="respostas" id="respostas">
 
             <h2>Questão 2:</h2>
             <h3>Em uma escola de Ensino Fundamental um concurso estabelece regras para conceder uma bolsa de estudos para o Ensino Médio. Em cada bimestre os alunos do 9.º ano realizam uma avaliação e, após os quatro bimestres, as notas são somadas. Os quatro alunos finalistas são os que alcançam as maiores pontuações. Ganhará a bolsa aquele que possuir a média mais alta das quatro notas das avaliações.</h3>
@@ -57,13 +54,20 @@
             
             <p><h3>O aluno que ganhou a bolsa de estudos foi</h3></p>
     
-            <!-- Alternativas -->
-            <div class="alternativas">
-                <label><input type="radio" name="alternativa" value="A"> A) o aluno A</label>
-                <label><input type="radio" name="alternativa" value="B"> B) o aluno B</label>
-                <label><input type="radio" name="alternativa" value="C"> C) o aluno C</label>
-                <label><input type="radio" name="alternativa" value="D"> D) o aluno D</label>
-            </div>
+            <form action="../../Gabarito/verificar.php" method="post">
+                <!-- Alternativas -->
+                <div class="alternativas">
+                    <label><input type="radio" name="2.1Q2" value="A"> A) o aluno A</label>
+                    <label><input type="radio" name="2.1Q2" value="B"> B) o aluno B</label>
+                    <label><input type="radio" name="2.1Q2" value="C"> C) o aluno C</label>
+                    <label><input type="radio" name="2.1Q2" value="D"> D) o aluno D</label>
+                </div>
+                <div class="botoes-navegacao">
+                    <button type="button" onclick="salvarResposta('2.1Q2', '2.1Q1.html', false, 'Grupo2.1')">Voltar</button>
+                    <button type="button" onclick="salvarResposta('2.1Q2', '2.1Q3.html', false, 'Grupo2.1')">Próximo</button>
+                </div>
+            </form>
+            <script src="../../Gabarito/salvarResposta.js"></script>
         </div>
     </body>
     </html>

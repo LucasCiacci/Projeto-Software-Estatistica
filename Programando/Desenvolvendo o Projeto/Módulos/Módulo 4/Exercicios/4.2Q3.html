@@ -41,23 +41,27 @@
 
         <!-- Área principal de conteúdo -->
         <div class="conteudo-principal">
-<!-- Botões de navegação entre exercícios -->
-<div class="botoes-navegacao">
-    <a href="4.2Q2.html" class="botao-voltar">Voltar</a>
-    
-</div>
+            <form id="questionario" action="../../Gabarito/verificar.php" method="post">
+                <input type="hidden" name="respostas" id="respostas">
 
             <h2>Questão 3:</h2>
             <h3>Em um recipiente, há 40 balas. Sendo que 15 delas são de chocolate, 10 de caramelo, 8 de leite e 7 de café. Se uma bala for tirada aleatoriamente, a probabilidade de ela ser de chocolate ou de café é de:</h3>
             
-            <!-- Alternativas -->
-            <div class="alternativas">
-                <label><input type="radio" name="alternativa" value="A"> A) 11/20</label>
-                <label><input type="radio" name="alternativa" value="B"> B) 5/8</label>
-                <label><input type="radio" name="alternativa" value="C"> C) 25/40</label>
-                <label><input type="radio" name="alternativa" value="D"> D) 8/11</label>
-                <label><input type="radio" name="alternativa" value="D"> E) 20/11</label>
-            </div>
+                <!-- Alternativas -->
+                <div class="alternativas">
+                    <label><input type="radio" name="4.2Q3" value="A"> A) 11/20</label>
+                    <label><input type="radio" name="4.2Q3" value="B"> B) 5/8</label>
+                    <label><input type="radio" name="4.2Q3" value="C"> C) 25/40</label>
+                    <label><input type="radio" name="4.2Q3" value="D"> D) 8/11</label>
+                    <label><input type="radio" name="4.2Q3" value="E"> E) 20/11</label>
+                </div>
+                <div class="botoes-navegacao">
+                    <button type="button" onclick="salvarResposta('4.2Q3', '4.2Q2.html', false, 'Grupo4.2')">Voltar</button>
+                    <button type="button" onclick="salvarResposta('4.2Q3', null, true, 'Grupo4.2')">Verificar Respostas</button>
+        
+                </div>
+            </form>
+            <script src="../../Gabarito/salvarResposta.js"></script>
         </div>
     </body>
     </html>

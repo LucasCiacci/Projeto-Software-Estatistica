@@ -41,11 +41,9 @@
 
         <!-- Área principal de conteúdo -->
         <div class="conteudo-principal">
-            <!-- Botões de navegação entre exercícios -->
-    <div class="botoes-navegacao">
-
-        <a href="1.1Q2.html" class="botao-proximo">Próximo</a>
-    </div>
+            <form id="questionario" action="../../Gabarito/verificar.php" method="post">
+                <!-- Campo oculto para armazenar respostas -->
+                <input type="hidden" name="respostas" id="respostas">
 
             <h2>Questão 1:</h2>
             <h3>Uma artesã está expandindo seus negócios e decidiu contratar dois vendedores: Cláudio e Mariana. O seguinte gráfico de barras mostra as vendas nos três meses iniciais do ano.</h3>
@@ -58,12 +56,17 @@
     
             <!-- Alternativas -->
             <div class="alternativas">
-                <label><input type="radio" name="alternativa" value="A"> A) Mariana - 20,3% - Cláudio</label>
-                <label><input type="radio" name="alternativa" value="B"> B) Mariana - 23,6% - Cláudio</label>
-                <label><input type="radio" name="alternativa" value="C"> C) Cláudio - 25,0% - Mariana</label>
-                <label><input type="radio" name="alternativa" value="D"> D) Cláudio - 17,6% - Mariana</label>
-                <label><input type="radio" name="alternativa" value="D"> E) Cláudio - 13,6% - Mariana</label>
+                <label><input type="radio" name="1.1Q1" value="A"> A) Mariana - 20,3% - Cláudio</label>
+                <label><input type="radio" name="1.1Q1" value="B"> B) Mariana - 23,6% - Cláudio</label>
+                <label><input type="radio" name="1.1Q1" value="C"> C) Cláudio - 25,0% - Mariana</label>
+                <label><input type="radio" name="1.1Q1" value="D"> D) Cláudio - 17,6% - Mariana</label>
+                <label><input type="radio" name="1.1Q1" value="E"> E) Cláudio - 13,6% - Mariana</label>
             </div>
+            <div class="botoes-navegacao">
+                <button type="button" onclick="salvarResposta('1.1Q1', '1.1Q2.html', false, 'Grupo1.1')">Próximo</button>
+            </div>
+        </form>
+        <script src="../../Gabarito/salvarResposta.js"></script>
         </div>
     </body>
     </html>

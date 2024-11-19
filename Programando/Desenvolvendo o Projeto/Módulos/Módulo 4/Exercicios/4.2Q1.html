@@ -41,23 +41,26 @@
 
         <!-- Área principal de conteúdo -->
         <div class="conteudo-principal">
-<!-- Botões de navegação entre exercícios -->
-<div class="botoes-navegacao">
-    
-    <a href="4.2Q2.html" class="botao-proximo">Próximo</a>
-</div>
+            <form id="questionario" action="../../Gabarito/verificar.php" method="post">
+                <!-- Campo oculto para armazenar respostas -->
+                <input type="hidden" name="respostas" id="respostas">
 
             <h2>Questão 1:</h2>
             <h3>Em uma sala de aula, há 20 meninos e 30 meninas. Desses estudantes, 18 usam óculos e 8 são meninos. Se um estudante dessa sala for sorteado ao acaso, qual é a probabilidade de o sorteado usar óculos ou ser um menino?</h3>
             
-            <!-- Alternativas -->
-            <div class="alternativas">
-                <label><input type="radio" name="alternativa" value="A"> A) 0,4</label>
-                <label><input type="radio" name="alternativa" value="B"> B) 0,5</label>
-                <label><input type="radio" name="alternativa" value="C"> C) 0,6</label>
-                <label><input type="radio" name="alternativa" value="D"> D) 0,7</label>
-                <label><input type="radio" name="alternativa" value="D"> E) 0,8</label>
-            </div>
+                <!-- Alternativas -->
+                <div class="alternativas">
+                    <label><input type="radio" name="4.2Q1" value="A"> A) 0,4</label>
+                    <label><input type="radio" name="4.2Q1" value="B"> B) 0,5</label>
+                    <label><input type="radio" name="4.2Q1" value="C"> C) 0,6</label>
+                    <label><input type="radio" name="4.2Q1" value="D"> D) 0,7</label>
+                    <label><input type="radio" name="4.2Q1" value="E"> E) 0,8</label>
+                </div>
+                <div class="botoes-navegacao">
+                    <button type="button" onclick="salvarResposta('4.2Q1', '4.2Q2.html', false, 'Grupo4.2')">Próximo</button>
+                </div>
+            </form>
+            <script src="../../Gabarito/salvarResposta.js"></script>
         </div>
     </body>
     </html>

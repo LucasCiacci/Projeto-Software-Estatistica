@@ -41,11 +41,8 @@
 
         <!-- Área principal de conteúdo -->
         <div class="conteudo-principal">
-<!-- Botões de navegação entre exercícios -->
-<div class="botoes-navegacao">
-    <a href="2.2Q2.html" class="botao-voltar">Voltar</a>
-    
-</div>
+            <form id="questionario" action="../../Gabarito/verificar.php" method="post">
+                <input type="hidden" name="respostas" id="respostas">
 
             <h2>Questão 3:</h2>
             <h3>(Marinha 2014) Analise o quadro a seguir.</h3>
@@ -55,14 +52,21 @@
             
             <p><h3>Qual foi a mediana dos dados apresentados? Assinale a opção que apresenta a moda dos dados do quadro acima.</h3></p>
     
-            <!-- Alternativas -->
-            <div class="alternativas">
-                <label><input type="radio" name="alternativa" value="A"> A) 9</label>
-                <label><input type="radio" name="alternativa" value="B"> B) 21</label>
-                <label><input type="radio" name="alternativa" value="C"> C) 30</label>
-                <label><input type="radio" name="alternativa" value="D"> D) 30,5</label>
-                <label><input type="radio" name="alternativa" value="D"> E) 31</label>
-            </div>
+                <!-- Alternativas -->
+                <div class="alternativas">
+                    <label><input type="radio" name="2.2Q3" value="A"> A) 9</label>
+                    <label><input type="radio" name="2.2Q3" value="B"> B) 21</label>
+                    <label><input type="radio" name="2.2Q3" value="C"> C) 30</label>
+                    <label><input type="radio" name="2.2Q3" value="D"> D) 30,5</label>
+                    <label><input type="radio" name="2.2Q3" value="E"> E) 31</label>
+                </div>
+                <div class="botoes-navegacao">
+                    <button type="button" onclick="salvarResposta('2.2Q3', '2.2Q2.html', false, 'Grupo2.2')">Voltar</button>
+                    <button type="button" onclick="salvarResposta('2.2Q3', null, true, 'Grupo2.2')">Verificar Respostas</button>
+        
+                </div>
+            </form>
+            <script src="../../Gabarito/salvarResposta.js"></script>
         </div>
     </body>
     </html>
